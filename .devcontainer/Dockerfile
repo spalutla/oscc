@@ -15,5 +15,7 @@ RUN pip3 install --upgrade pip \
 # Set working directory
 WORKDIR /workspace
 
+RUN ln -sf /usr/share/zoneinfo/UTC /etc/localtime
+
 CMD ["/bin/bash"]
 
